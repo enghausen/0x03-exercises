@@ -9,7 +9,7 @@ Requirements
 - To increase productivity for the personel handling the fines, the program should continue prompting the user for data (speed limit, speed measurement and vehicle type) until terminated
 - The speed limits input should be restricted to 100, 110, 120, or 130 km/h and print out a message to the user if they provide an invalid value
 
-The size of the penalty depends on the type of the vehicle the driver is driving. For what we would consider a normal car, it depends on which type of road you're driving on, while heavy vehicles and cars with trailers all are fined the same amount. 
+The size of the penalty depends on the type of the vehicle. For what we would consider a normal car, it depends on which type of road you're driving on, while heavy vehicles and cars with trailers all are fined the same amount. 
 - **Takst 1** — Cars, motorcycles and busses not above 3.500 kg and construction vehicles outside controlled-access highways and limited-access roads with a speed limit below 100 km/h.
 - **Takst 2** — Cars, motercycles and busses not above 3.500 kg on limited-access roads with a speed limit of 100 km/t and controlled-access highways with a speed limit on 100 km/h and above
 - **Takst 3** — Heavy vehicles (busses, trucks, semi-trucks) above 3.500 kg and cars with trailers not above 3.500 kg.
@@ -52,21 +52,20 @@ A short recap of the The Seven Steps
   - Start taking contemporaneous notes while working a single instance of the problem and make sure you cover all constraints (e.g. given a speed of 142 km/h in a zone with a 120 km/h speed limit)
   - Use pseudo code to describe your algorithm
 - Generalize and test
-  - See if you can categorize some of the steps in your solution from Exercise 0x01. Are there you doing some calculations, that could be generalized in put into functions (check lecture 1 to get a refresher on the syntax)?
   - Try with a few different input values and see if the algorithm still holds up after being generalized.
 - Let's cooooode!
-  - Now it's time to get going with some code! Fire up your IDE (probably Visual Studio, but I don't care!)
-  - Create a new solution and start typing. Don't forget to run your code from time to time, it's a lot easier to make progress, if we don't have to deal with a lot of bugs at the same time
+  - Now it's time to get going with some code! Fire up your IDE (probably Visual Studio Code, but we don't care!)
+  - Create a new project or folder, create a file, and start typing. Don't forget to run your code from time to time, it's a lot easier to make progress, if we don't have to deal with different of bugs at the same time
   - Use your pseudo code as a reference in the translation to code
 - Test and debug
-  - Whenever you have done changes to your done, that you consider to be working as intended (e.g. a `while` loop prompting for user input, a function that calculates the violation percentage, some code to calculate additional high speed penalties), be sure to run and test that everything still works as expected, if not, it's time to debug the defect before adding more code. 
+  - Whenever you have done changes to your done, that you consider to be working as intended (e.g. a `while` loop prompting for user input, the calculation of the violation percentage, the code to calculate additional high speed penalties), be sure to run and test that everything still works as expected, if not, it's time to debug the defect before adding more code 
 
 ## Exercise 0x01
 Expand the program from Exercise 0x0 to also handle the speeding outside controlled-access highways and limited-access roads with a speed limit below 100 km/h as presented in Table 3.
 
 Requirements
 - The requirements in Exercise 0x0 still stands, but some have to be modifed, which ones?
-- If the violation is 30 % or above, an additional penalty of 1.200 kr. is issued.
+- If the violation is 30% or above, an additional penalty of 1.200 kr. is issued.
 
 |Procent|30 km/t|40 km/t|45 km/t|50 km/t|60 km/t|70 km/t|80 km/t|90 km/t|Takst 1|Takst 3|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
