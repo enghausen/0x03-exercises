@@ -1,4 +1,4 @@
-# Lesson 04 Exercises
+# Lesson 0x03 Exercises
 
 ## Exercise 0x0
 Build a program that can calculate the speeding penalties on Danish controlled-access highways and limited-access.
@@ -26,6 +26,7 @@ The size of the penalty depends on the type of the vehicle the driver is driving
 |80-89|180-189|198-208|216-227*|234 -246*|6.000 kr.|6.000 kr.|
 |90-99|190-199|209-219|228-239*|247-259*|7.800 kr.|7.800 kr.|
 |100-|200-*|220-*|240-*|260-*|9.000 kr.|9.000 kr.|
+
 <small>Table1 — On limited-access roads with a speed limit of 100 km/h and controlled-access highways with a speed limit on 100 km/h and above[^1]</small>
 
 In addition to the penalty defined in Table 1, an additional penalty will be issued, if the measured as described in the Table 2 below.
@@ -42,6 +43,7 @@ In addition to the penalty defined in Table 1, an additional penalty will be iss
 |210-219|5.400 kr.|
 |220-229|6.000 kr.|
 |osv.|osv.|
+
 <small>Table 2 — Addition high speed penalty for all roads.[^1]</small>
 
 A short recap of the The Seven Steps
@@ -78,6 +80,7 @@ Requirements
 |80-89|54-56|72-75|81-85|90-94|108-113|126-132|144-151|162-170|4.200 kr.|6.000 kr.|
 |90-99|57-59|76-79|86-89|95-99|114-119|133-139|152-159|171-179|5.400 kr.|7.800 kr.|
 |100-|60-|80-|90-|100-*|120-*|140-*|160-*|180-*|6.000 kr.|9.000 kr.|
+
 <small>Table 3 — Outside controlled-access highways and limited-access roads with a speed limit below 100 km/t[^1]</small>
 
 ## Exercise 0x2
