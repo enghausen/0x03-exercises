@@ -18,7 +18,8 @@
         "MIMode": "gdb"
       },
       "osx": {
-        "MIMode": "lldb"
+        "MIMode": "lldb",
+        "externalConsole": true
       },
       "preLaunchTask": "build",
     }
